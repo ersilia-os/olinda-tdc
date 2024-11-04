@@ -25,21 +25,21 @@ We have benchmarked Olinda models against the corresponding ZairaChem models in 
 The admet_classifications notebook shows the code to reproduce the model training and evaluation. For simplicity, the automated reports and raw data of the 5-fold evaluations are provided in the /predictions folder.
 
 ### Results
-| Dataset    | Metric |  ZairaChem Score | Olinda Score |
-| ----------- | ----------- | ----------- |
-| Bioavailability_Ma   | AUROC | 0.693 ± 0.009  | 0.676 ± 0.022 | 
-| HIA_Hou  | AUROC | 0.990 ± 0.004 | 0.888 ± 0.194 |
-| Pgp_Broccatelli | AUROC | 0.941 ± 0.005 | 0.936 ± 0.006 |
-| BBB_Martins   | AUROC | 0.921 ± 0.007 | 0.899 ± 0.009 |
-| CYP2C9_Veith   | AUPRC | 0.779 ± 0.005 | 0.744 ± 0.006 |
-| CYP2D6_Veith  | AUPRC | 0.707 ± 0.010 | 0.652 ± 0.012 |
-| CYP3A4_Veith   | AUPRC | 0.858 ± 0.007 | 0.846 ± 0.003 |
-| CYP2C9_Substrate_CarbonMangels   | AUPRC | 0.420 ± 0.011 | 0.415 ± 0.019 |
-| CYP2D6_Substrate_CarbonMangels   | AUPRC | 0.719 ± 0.023 | 0.693 ± 0.022 |
-| CYP3A4_Substrate_CarbonMangels   | AUPRC | 0.633 ± 0.010 | 0.615 ± 0.010 |
-| hERG   | AUROC | 0.861 ± 0.005 | 0.843 ± 0.021 |
-| AMES   | AUROC | 0.853 ± 0.005 | 0.823 ± 0.005 |
-| DILI   | AUROC | 0.933 ± 0.012 | 0.914 ± 0.023 |
+| assay                          |   zaira-chem auroc |   zaira-chem stdev |   olinda auroc |   olinda stdev |   delta |   perc_performance |
+|:-------------------------------|-------------------:|-------------------:|---------------:|---------------:|--------:|-------------------:|
+| Bioavailability_Ma             |              0.693 |              0.009 |          0.676 |          0.022 |  -0.017 |               0.98 |
+| HIA_Hou                        |              0.99  |              0.004 |          0.888 |          0.194 |  -0.102 |               0.9  |
+| Pgp_Broccatelli                |              0.941 |              0.005 |          0.936 |          0.006 |  -0.005 |               0.99 |
+| BBB_Martins                    |              0.921 |              0.007 |          0.899 |          0.009 |  -0.022 |               0.98 |
+| CYP2C9_Veith                   |              0.779 |              0.005 |          0.744 |          0.006 |  -0.035 |               0.96 |
+| CYP2D6_Veith                   |              0.707 |              0.01  |          0.652 |          0.012 |  -0.055 |               0.92 |
+| CYP3A4_Veith                   |              0.858 |              0.007 |          0.846 |          0.003 |  -0.012 |               0.99 |
+| CYP2C9_Substrate_CarbonMangels |              0.42  |              0.011 |          0.415 |          0.019 |  -0.005 |               0.99 |
+| CYP2D6_Substrate_CarbonMangels |              0.719 |              0.023 |          0.693 |          0.022 |  -0.026 |               0.96 |
+| CYP3A4_Substrate_CarbonMangels |              0.633 |              0.01  |          0.615 |          0.01  |  -0.018 |               0.97 |
+| hERG                           |              0.861 |              0.005 |          0.843 |          0.021 |  -0.018 |               0.98 |
+| AMES                           |              0.853 |              0.005 |          0.823 |          0.005 |  -0.03  |               0.96 |
+| DILI                           |              0.933 |              0.012 |          0.914 |          0.023 |  -0.019 |               0.98 |
 
 
 # About us
