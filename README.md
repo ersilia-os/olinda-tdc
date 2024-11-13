@@ -1,6 +1,9 @@
 # olinda-tdc
 This repository contains the benchmarking of Olinda v1 using the [Therapeutics Data Commons Datasets](https://tdcommons.ai/)
 
+onnx models in the notebooks can be run with the wrapper [api](https://github.com/JHlozek/olinda_api). This is automatically installed in the Olinda and ZairaChem environments.
+The models can also be run from the 'zairachem predict' and 'olinda predict' cli commands.
+
 ## Olinda
 [Olinda](https://github.com/ersilia-os/olinda) is an automated model distillation pipeline for ML-based (Q)SAR models, currently specific to ZairaChem models.
 
